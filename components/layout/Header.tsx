@@ -47,20 +47,22 @@ const Header: React.FC = () => {
       </div>
 
       <div className="flex gap-x-3 overflow-x-auto">
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
-        <Icons />
+        <Icons src="/assets/icons/living-room.png" name="Rooms" />
+        <Icons src="/assets/icons/mansion.png" name="Mansion" />
+        <Icons src="/assets/icons/farm.png" name="Countryside" />
+        <Icons src="/assets/icons/villa.png" name="Villa" />
+        <Icons src="/assets/icons/palm-tree.png" name="Tropical" />
+        <Icons src="/assets/icons/key-chain.png" name="New" />
+        <Icons src="/assets/icons/swimming-pool.png" name="Amazing pool" />
+        <Icons src="/assets/icons/vacations.png" name="Beach house" />
+        <Icons src="/assets/icons/island.png" name="Island" />
+        <Icons src="/assets/icons/tent.png" name="Camping" />
+        <Icons src="/assets/icons/home.png" name="House" />
+        <Icons src="/assets/icons/cottage.png" name="Lakefront" />
+        <Icons src="/assets/icons/barn.png" name="Farm house" />
+        <Icons src="/assets/icons/treehouse.png" name="Treehouse" />
+        <Icons src="/assets/icons/cabin.png" name="Cabins" />
+        <Icons src="/assets/icons/castle-tower.png" name="Castle" />
       </div>
     </header>
   );
