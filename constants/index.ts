@@ -1,5 +1,13 @@
 import { PropertyProps } from "@/interfaces";
 
+export const filters: string[] = [
+  "All",
+  "Free Reschedule",
+  "Book Now",
+  "Pay Later",
+  "Self CheckIn",
+  "Instant Book",
+];
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
     name: "Villa Ocean Breeze",
