@@ -29,7 +29,7 @@ const Header: React.FC = () => {
               src="/assets/icons/vector.png"
               alt="Logo Image"
               width={40}
-              height={30}
+              height={30} 
             />
           </Link>
         </>
