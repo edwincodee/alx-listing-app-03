@@ -5,8 +5,8 @@ const Pill: React.FC<PillProps> = ({ name, isActive, onClick }) => {
     <button
       onClick={() => onClick(name)}
       className={`${
-        isActive ? "border border-emerald-600 bg-emerald-100" : "shadow-xs"
-      } rounded-full text-xs px-3 py-1 transition-all duration-100`}
+        isActive ? " border-emerald-800 border-2 bg-emerald-200" : "shadow-xs"
+      } rounded-full border border-gray-200 text-xs px-4 py-2 transition-all duration-100`}
     >
       {name}
     </button>

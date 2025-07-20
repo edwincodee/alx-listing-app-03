@@ -1,7 +1,13 @@
 import Card from "@/components/common/Card";
-import { PROPERTYLISTINGSAMPLE } from "@/constants";
+import Pill from "@/components/common/Pill";
+import { PROPERTYLISTINGSAMPLE, filters } from "@/constants";
+import { useState } from "react";
 
 const Home: React.FC = () => {
+  const [activeFilter, setActiveFilter] = useState<null | string>(null);
+  const handleActiveFilter = (name: string) => {
+    setActiveFilter(name === activeFilter ? null : name);
+  };
   return (
     <>
       <div
@@ -15,6 +21,27 @@ const Home: React.FC = () => {
           </h2>
           <p className="md:text-xs text-[8px]">
             The best prices for over 2 million properties worldwide
+          </p>
+        </div>
+      </div>
+
+      <div className="hidden md:flex my-10 items-center justify-between w-[90%] m-auto">
+        <div className="flex gap-x-3 items-center">
+          {filters.map((filter) => (
+            <Pill
+              key={filter}
+              onClick={handleActiveFilter}
+              name={`${filter}`}
+              isActive={filter === activeFilter}
+            />
+          ))}
+        </div>
+        <div className="flex items-center gap-x-4 text-xs">
+          <span className="border border-gray-100 rounded-full px-2 py-1">
+            filter
+          </span>
+          <p className="border px-2 py-1 border-gray-100 rounded-full">
+            <span className="text-gray300">Sort by:</span> Highest Price
           </p>
         </div>
       </div>
